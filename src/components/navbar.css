@@ -1,0 +1,45 @@
+
+.hamburger {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hamburger .line {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+  }
+  
+  .hamburger .top-line {
+    top: 6px;
+  }
+  
+  .hamburger .middle-line {
+    top: 12px;
+  }
+  
+  .hamburger .bottom-line {
+    top: 18px;
+  }
+  
+  .hamburger.open .top-line {
+    transform: rotate(45deg);
+    top: 12px;
+  }
+  
+  .hamburger.open .middle-line {
+    opacity: 0;
+  }
+  
+  .hamburger.open .bottom-line {
+    transform: rotate(-45deg);
+    top: 12px;
+  }
+  
